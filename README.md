@@ -23,7 +23,7 @@ The training entry scripts:
 python comon_two_stream_sep_gaussion_organal_arc_margin_nomalizedy.py
 ```
 
-The generated example of EEG signals with separated noise (red)
+The generated example of EEG signals with separated noise (green)
 
 <img src=./visualization/noise_995_subject_%5B1%5D.png width = "500" height = "300" alt="图片名称" align=center />
 
