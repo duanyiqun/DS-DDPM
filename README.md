@@ -24,7 +24,7 @@ The intuition is simple, traditional EEG denoising methods normal apply blind so
 We apply domain generation to model human subjects difference separation as a summation of domain generation and clean 
 content denoising as figure shows below. 
 
-To bettter illustrate the generated brain activity and compared it with the real sample, with give a illustration as bellow. 
+To bettter illustrate the generated brain activity and compared it with the real sample, with give a illustration as bellow. The first row is the EEG sensor spatial relations (left for 3D spatial position, right for 2d projection). The second raw is the signal variance through time ( left for generated, rigth for real data).
 
 
 <div align="center">
