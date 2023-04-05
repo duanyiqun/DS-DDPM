@@ -27,17 +27,24 @@ content denoising as figure shows below.
 To bettter illustrate the generated brain activity and compared it with the real sample, with give a illustration as bellow. 
 
 
-<center>
+<div align="center">
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./imgs/montage.png"  width = "350"> <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./imgs/montage_2d.png"  width = "350">
     <br>
-</center>  
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;margin-right: 85px;
+    padding: 2px;">Sensor Position of the EEG Electrodes</div>  <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999; 
+    padding: 2px;">2D Projection of the Sensor Position</div> 
+</div>  
   
 
-<center>
+<div align="center">
 <br>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
@@ -45,7 +52,14 @@ To bettter illustrate the generated brain activity and compared it with the real
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./imgs/surface_graph_id_1.gif"  width = "350">
     <br>
-</center>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999; margin-right: 80px;
+    padding: 2px;">Sampled Brain Waves Variance on Time wise</div>  <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999; 
+    padding: 2px;">Real Brain Waves Variance on Time wise</div>
+</div>
 
 
 
