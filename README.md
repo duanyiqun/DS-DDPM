@@ -80,7 +80,7 @@ wandb login
 Please note that the currrent setting stacks time segments of EEG signals to form a long time series. The default setting is 244 time window with stride step 75. You can change it in the training file. 
 
 One important problem is multiple logits for each time window may lead to multiple values for a same time point. We use a constraint to constraint different values associated to a same time point to be the same. You can use ``time_diff_constraint=True`` to control the constraint. 
-To give a illustrate, we give a comparision example of the generated EEG signals with and without the constraint, where red denotes training with time diff constraint, blue denotes training without time diff constraint.
+To give a illustrate, we give a comparision example of the generated EEG signals with and without the constraint, where red denotes training with time diff constraint, green denotes training without time diff constraint. It illustrates the efficiency of our loss design. 
 
 
 <div align="center">
