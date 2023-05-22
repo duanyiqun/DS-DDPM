@@ -119,3 +119,20 @@ The generated example of denoised EEG signals (blue) with separated noise (green
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"  src=./visualization/noise_curve_animate_subject_[0].gif width = "400" alt="图片名称" align=center /> <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"  src=./visualization/noise_curve_animate_subject_[1].gif width = "400" alt="图片名称" align=center />
 </div>
+
+
+## 一些来自Nicolas Yang的补充
+在运行前需要更改文件路径：（大概在文件 unet2d_overlap.py 的930行左右）
+```bash
+return DatasetLoader_BCI_IV_signle('train', datafolder='/你/的/数据/文件夹', subject_id=3)
+```
+
+515 行也要改
+```bash
+metric_file = '/content/DS-DDPM/metrics/none_constraint_subject_gaussion_unet_att_loss_ep100_withorga_arc_normalized.csv'
+```
+
+462行也要改
+```bash
+load_backbone = '/content/DS-DDPM/assets/max_acc.pth'
+```

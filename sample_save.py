@@ -142,7 +142,7 @@ class ArcMarginHead(nn.Module):
             cos(theta + m)
         """
 
-    def __init__(self, in_features, out_features, load_backbone = '/home/yiqduan/Data/bci/EEG_MI_DARTS/Mudus_BCI/logs/subjects_normal/BCI_IV_EEGNet_batchsize256_lr0.05_gamma0.5_step20_maxepoch100_exp1/max_acc.pth', s=30.0, m=0.50, easy_margin=False):
+    def __init__(self, in_features, out_features, load_backbone = '/content/DS-DDPM/assets/max_acc.pth', s=30.0, m=0.50, easy_margin=False):
         super(ArcMarginHead, self).__init__()
         self.arcpro = ArcMarginProduct(in_features, out_features, s=30.0, m=0.50, easy_margin=False)
         self.auxback = EEG_Net_8_Stack(mtl=False)

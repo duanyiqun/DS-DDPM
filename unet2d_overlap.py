@@ -459,7 +459,7 @@ class Configs(BaseConfigs):
 
         self.sub_archead = ArcMarginHead(
             self.arc_in, self.arc_out, 
-            load_backbone = './assets/max_acc.pth', 
+            load_backbone = '/content/DS-DDPM/assets/max_acc.pth',
             s=30.0, m=0.50, easy_margin=False
         ).to(self.device)
 
@@ -512,7 +512,7 @@ class Configs(BaseConfigs):
         """
         ### Train
         """
-        metric_file = '/home/yiqduan/Data/ddpm/ddpm/metrics/none_constraint_subject_gaussion_unet_att_loss_ep100_withorga_arc_normalized.csv'
+        metric_file = '/content/DS-DDPM/metrics/none_constraint_subject_gaussion_unet_att_loss_ep100_withorga_arc_normalized.csv'
         loss_target = open(metric_file, 'a+')
         target_writer = csv.writer(loss_target)
         # target_writer.writerow(['loss', 'time_period_diff'])
@@ -926,8 +926,8 @@ def datasetLoader_BCI_IV_signle(c: Configs):
     """
     Create BCI IV dataset
     """
-    
-    return DatasetLoader_BCI_IV_signle('train', datafolder='/home/yiqduan/Data/bci/EEG_MI_DARTS/Mudus_BCI/data/bci_iv/', subject_id=3)
+
+    return DatasetLoader_BCI_IV_signle('train', datafolder='/content/DS-DDPM/DS-DDPM-data', subject_id=3)
 
 
 @option(Configs.dataset, 'bci_comp_iv_full_mix')
@@ -935,7 +935,7 @@ def datasetLoader_BCI_IV_mix_subjects(c: Configs):
     """
     Create BCI IV dataset
     """
-    return DatasetLoader_BCI_IV_mix_subjects('train', datafolder='/home/yiqduan/Data/bci/EEG_MI_DARTS/Mudus_BCI/data/bci_iv/')
+    return DatasetLoader_BCI_IV_mix_subjects('train', datafolder='/content/DS-DDPM/DS-DDPM-data')
 
 
 def main():
