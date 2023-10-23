@@ -20,11 +20,11 @@ WIP ...
 
 A minimum implementation of Domain Specific Denoising Diffusion Probabilistic Models for Brain Dynamics/EEG Signals
 
-The intuition is simple, traditional EEG denoising methods normal apply blind source separation or frequency filtering.
-We apply domain generation to model human subjects difference separation as a summation of domain generation and clean 
-content denoising as figure shows below. 
+The intuition is simple, traditional EEG denoising methods normally apply blind source separation or frequency filtering.
+We apply domain generation to model human subject's difference separation as a summation of domain generation and clean 
+content denoising as the figure shows below. 
 
-To bettter illustrate the generated brain activity and compared it with the real sample, with give a illustration as bellow. The first row is the EEG sensor spatial relations (left for 3D spatial position, right for 2d projection). The second raw is the signal variance through time ( left for generated, rigth for real data).
+To better illustrate the generated brain activity and compare it with the real sample, give an illustration below. The first row is the EEG sensor spatial relations (left for 3D spatial position, right for 2d projection). The second raw is the signal variance through time ( left for generated, right for real data).
 
 
 <div align="center">
@@ -47,7 +47,15 @@ To bettter illustrate the generated brain activity and compared it with the real
     <br>
 </div>
 
-
+## Citation
+```sh
+@article{duan2023domain,
+  title={Domain-specific denoising diffusion probabilistic models for brain dynamics},
+  author={Duan, Yiqun and Zhou, Jinzhao and Wang, Zhen and Chang, Yu-Cheng and Wang, Yu-Kai and Lin, Chin-Teng},
+  journal={arXiv preprint arXiv:2305.04200},
+  year={2023}
+}
+```
 
 
 ______________________________________________________________________
