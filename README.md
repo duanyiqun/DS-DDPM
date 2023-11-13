@@ -6,7 +6,6 @@
 
 ______________________________________________________________________
 
-WIP ...
 
  [![python](https://img.shields.io/badge/python-%20%203.9-blue.svg)]()
 [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/duanyiqun/DiffusionDepth/blob/main/LICENSE)
